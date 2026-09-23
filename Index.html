@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LKPD JavaScript - Input, Output & Operator</title>
+<style>
+body{font-family:Arial,sans-serif;line-height:1.6;max-width:900px;margin:30px auto;padding:20px;background:#f5f5f5;color:#222}
+.container{background:white;padding:30px;border-radius:12px;box-shadow:0 2px 10px #bbb}
+h1,h2{color:#222}
+.identity{background:#eee;padding:15px;border-radius:8px}
+.question{margin:18px 0;padding:15px;border-left:4px solid #333;background:#fafafa}
+.answer{font-weight:bold;margin-top:6px}
+pre{background:#222;color:#fff;padding:14px;border-radius:8px;overflow:auto}
+table{border-collapse:collapse;width:100%;margin:10px 0}
+th,td{border:1px solid #999;padding:8px;text-align:left}
+th{background:#eee}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>LKPD – INPUT, OUTPUT &amp; OPERATOR</h1>
+
+<div class="identity">
+<strong>Nama:</strong> Angga Nugraha Muhamad Aditya<br>
+<strong>Kelas:</strong> X PPLG 1<br>
+<strong>Tanggal:</strong> 23-09-26
+</div>
+
+<h2>Aktivitas 1 – Prediksi</h2>
+<pre>let a = 10;
+let b = 5;
+console.log(a + b);
+console.log(a - b);
+console.log(a * b);
+console.log(a / b);</pre>
+<table>
+<tr><th>Operasi</th><th>Prediksi</th><th>Hasil sebenarnya</th></tr>
+<tr><td>a + b</td><td>15</td><td>15</td></tr>
+<tr><td>a - b</td><td>5</td><td>5</td></tr>
+<tr><td>a * b</td><td>50</td><td>50</td></tr>
+<tr><td>a / b</td><td>2</td><td>2</td></tr>
+</table>
+<p><strong>Apakah prediksi benar?</strong> Ya</p>
+<p><strong>Mengapa?</strong> Karena hasil perhitungannya sesuai dengan operasi aritmatika yang digunakan.</p>
+
+<h2>Aktivitas 2 – Eksperimen</h2>
+<pre>let a = 20;
+let b = 4;
+console.log(a + b);
+console.log(a - b);
+console.log(a * b);
+console.log(a / b);
+console.log(a % b);</pre>
+<p><strong>Prediksi:</strong> a+b = 24, a-b = 16, a*b = 80, a/b = 5, a%b = 0</p>
+<p><strong>Apa yang ditemukan?</strong> Operator aritmatika dapat digunakan untuk menghitung data.</p>
+
+<h2>Aktivitas 3 – Input dengan prompt()</h2>
+<pre>let nama = prompt("Masukkan nama:");
+console.log(nama);
+let umur = prompt("Masukkan umur:");
+console.log(umur);</pre>
+<p><strong>Fungsi prompt():</strong> Untuk meminta input atau data dari pengguna.</p>
+
+<h2>Aktivitas 4 – Menghitung Umur</h2>
+<pre>let tahunLahir = prompt("Masukkan tahun lahir:");
+let tahunSekarang = 2026;
+let umur = tahunSekarang - tahunLahir;
+console.log(umur);</pre>
+<p><strong>Umur:</strong> 16 tahun</p>
+
+<h2>Aktivitas 5 – Mesin Kasir Mini</h2>
+<pre>let harga = prompt("Masukkan harga:");
+let jumlah = prompt("Masukkan jumlah:");
+let total = harga * jumlah;
+console.log(total);</pre>
+<p><strong>Uji:</strong> Harga = 5000, Jumlah = 4. <strong>Total = Rp 20.000</strong></p>
+
+<h2>Aktivitas 6 – Think Pair Share</h2>
+<p><strong>THINK:</strong> Variable total digunakan untuk menyimpan hasil perhitungan agar mudah ditampilkan dan digunakan lagi.</p>
+<p><strong>PAIR:</strong> Ya</p>
+<p><strong>Jika berbeda:</strong> Semua anggota memiliki hasil yang sama.</p>
+<p><strong>SHARE:</strong> Program menerima data, memprosesnya, lalu menampilkan hasil perhitungan.</p>
+
+<h2>Aktivitas 7 – Challenge: Warung Digital</h2>
+<pre>let makanan = prompt("Nama makanan:");
+let harga = prompt("Harga:");
+let jumlah = prompt("Jumlah:");
+let total = harga * jumlah;
+console.log(makanan);
+console.log(harga);
+console.log(jumlah);
+console.log(total);
+
+let diskon = total * 10 / 100;
+let bayar = total - diskon;
+console.log(total);
+console.log(diskon);
+console.log(bayar);</pre>
+<p><strong>Kesimpulan:</strong> Program menerima nama makanan, harga, dan jumlah, kemudian menghitung total, diskon 10%, dan total yang harus dibayar.</p>
+
+<h2>Aktivitas 8 – Debugging</h2>
+<pre>let harga = 5000;
+let jumlah = 3;
+let total harga = harga * jumlah;
+console.log(total harga);</pre>
+<p><strong>Kesalahan:</strong> Nama variable <code>total harga</code> mengandung spasi sehingga tidak valid.</p>
+<p><strong>Perbaikan:</strong></p>
+<pre>let harga = 5000;
+let jumlah = 3;
+let totalHarga = harga * jumlah;
+console.log(totalHarga);</pre>
+
+<h2>Aktivitas 9 – Challenge Mandiri: Kalkulator Tabungan</h2>
+<pre>let uangAwal = Number(prompt("Uang awal:"));
+let hariPertama = Number(prompt("Tabungan hari pertama:"));
+let hariKedua = Number(prompt("Tabungan hari kedua:"));
+let hariKetiga = Number(prompt("Tabungan hari ketiga"));
+
+let total = uangAwal + hariPertama + hariKedua + hariKetiga;
+console.log(total);</pre>
+<p><strong>Total tabungan:</strong> Rp 600.000</p>
+
+<h2>D. Asesmen Formatif</h2>
+<div class="question">Apa output dari <code>let a = 8; let b = 2; console.log(a + b);</code>?
+<div class="answer">Jawaban: 10</div></div>
+<div class="question">Apa output dari <code>let a = 10; let b = 3; console.log(a % b);</code>?
+<div class="answer">Jawaban: 1</div></div>
+<div class="question">Apa fungsi prompt()?
+<div class="answer">Jawaban: Untuk meminta input dari pengguna.</div></div>
+<div class="question">Buat program menghitung luas persegi panjang dengan panjang 10 dan lebar 5.
+<pre>let panjang = 10;
+let lebar = 5;
+let luas = panjang * lebar;
+console.log(luas); // 50</pre></div>
+
+<h2>F. Refleksi Pembelajaran Mendalam</h2>
+<p><strong>Berkesadaran:</strong> Hari ini saya menyadari bahwa JavaScript dapat menerima input, memproses data, dan menampilkan hasil.</p>
+<p><strong>Bermakna:</strong> Materi ini dapat digunakan untuk menghitung data dalam program, seperti total belanja, umur, dan luas bangun.</p>
+<p><strong>Menggembirakan:</strong> Bagian pembelajaran yang paling saya sukai adalah mencoba membuat program dan melihat hasilnya langsung di console.</p>
+
+<h2>G. Exit Ticket</h2>
+<ol>
+<li>Satu hal yang sudah saya kuasai: penggunaan variable dan operator aritmatika.</li>
+<li>Satu hal yang masih membingungkan: konversi data dari string ke number.</li>
+<li>Satu hal yang ingin saya coba: membuat kalkulator sederhana dengan JavaScript.</li>
+</ol>
+
+<h2>H. Urutan Materi Selanjutnya</h2>
+<ol>
+<li>Pengenalan JavaScript</li>
+<li>Variable</li>
+<li>Input – Output – Aritmatika</li>
+<li>Number &amp; String + Konversi Data</li>
+<li>Operator Perbandingan</li>
+<li>Boolean</li>
+<li>Percabangan if</li>
+<li>if – else</li>
+<li>else if</li>
+<li>Nested if</li>
+<li>Perulangan</li>
+<li>Array</li>
+<li>Function</li>
+<li>Object</li>
+<li>DOM</li>
+<li>Event</li>
+<li>Mini Project</li>
+  <script src="LKPD 2/percobaan.js"></script>
+</ol>
+</div>
+</body>
+</html>
